@@ -1,0 +1,132 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/f6c0521099.js" crossorigin="anonymous"></script>
+
+<!-- -->
+
+<div class="container" id="main-container">
+  
+  <h1 id="title"> Let us know what you think!</h1>
+  <p id="description">You can use this form to tell us what you thought of your evening in our game bar</p>
+
+    <div class="container" id="form-container">
+    <form id="survey-form" action="#" novalidate>
+      <div class="form-group">
+        <label for="name" id="name-label">Name</label>
+        <div class="input-group">
+          <span class="input-group-prepend">
+            <span class="input-group-text">
+              <i class="fa fa-user"></i>
+            </span>
+          </span>
+          <input type="text" id="name" class="form-control" placeholder="e.g.: Soap McTavish" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email" id="email-label">Email</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+              <i class="fa fa-at"></i>
+            </div>
+          </div>
+          <input type="email" id="email" class="form-control" placeholder="e.g.: rick_astley@gmail.com" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="number" id="number-label">Age</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+              <i class="fa fa-baby-carriage"></i>
+            </div>
+          </div>
+          <input type="number" id="number" class="form-control" placeholder="18 minimum" min="18" max="99" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="dropdown" id="game-label">
+          Choose your favorite title of our latest game night!
+          </br>
+          <select id="dropdown" class="form-control" required>
+            <option value="" disable selected></option>
+            <option value="Paladins"> Paladins </option>
+            <option value="League of Legends"> League of Legends </option>
+            <option value="Counter Strike: Global Offensive"> Counter Strike: Global Offensive </option>
+          </select>
+        </label>
+      </div>
+
+      <span>Which one of the following aspects do you think defines it the most?</span>
+        <div class="form-group" id="radio-buttons">  
+          <div class="radio">
+            <label for="teamwork">
+              <input type="radio" id="teamwork" value="teamwork" name="game-aspect" required>
+              Teamwork
+            </label>
+          </div>
+          <div class="radio">
+            <label for="objectives">
+              <input type="radio" id="objectives" value="objectives" name="game-aspect">
+              Objective-based gameplay
+            </label>
+          </div>
+          <div class="radio">
+            <label for="fast-paced">
+              <input type="radio" id="fast-paced" value="fast-paced" name="game-aspect">
+              Fast-paced rounds
+            </label>
+          </div>
+        </div>
+
+      <span>What do you think we could improve for the next game night?</span>
+        <div class="form-group" id="checkboxes"> 
+          <div class="checkbox">
+            <label for="structure">
+              <input type="checkbox" id="structure" value="structure" name="improvement">
+              Tournament structure
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <label for="time">
+              <input type="checkbox" id="time" value="time" name="improvement">
+              Starting and end time
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <label for="food">
+              <input type="checkbox" id="food" value="food" name="improvement">
+              Food and drinks
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <label for="prizes">
+              <input type="checkbox" id="prizes" value="prizes" name="improvement">
+              Prizes
+            </label>
+          </div>
+        </div>
+      
+      <div class="form-group">
+        <label for="comments">
+          Please tell us how you think these could be improved and spare no details!
+          </br>
+          <textarea id="comments" name="comments" class="form-control" placeholder="Have at it!"></textarea>
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label for="submit">
+          <button type="submit" id="submit" class="btn btn-primary btn-block">Submit</button>
+        </label>
+      </div>
+
+    </form>
+   </div>
+</div>

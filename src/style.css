@@ -1,0 +1,60 @@
+html {
+  font-size: 14px;
+}
+
+#main-container {
+  font-family: "Helvetica", Arial, sans-serif;
+  background: hsl(185, 35%, 40%);
+  max-width: 100%;
+  padding: 40px 0;
+}
+
+#title {
+  font-size: 3.7em;
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+  text-shadow: 2px 1px 3px black;
+}
+
+#description {
+  font-size: 1.3em;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 20px;
+  color: white;
+  text-shadow: 2px 1px 2px black;
+}
+
+#form-container {
+  max-width: 720px;
+  background-color: hsl(0, 0%, 85%, 0.85);
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  box-shadow: 1px 1px 3px black;
+}
+
+#survey-form {
+  padding: 20px 5px 10px 5px;
+}
+
+#name-label, #email-label, #number-label, #game-label, span, label[for=comments] {
+  font-weight: bold;
+}
+
+label[for=submit]{
+  width: 100%
+}
+
+#comments {
+  resize: both;
+}
+
+#submit {
+  width: 100%;
+  background-color: hsl(185, 35%, 40%);
+  border-color: hsl(185, 35%, 40%);
+  font-weight: bold;
+}
